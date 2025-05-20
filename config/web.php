@@ -23,9 +23,6 @@ $config = [
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
         ],
-        'errorHandler' => [
-            'errorAction' => 'site/error',
-        ],
         'mailer' => [
             'class' => \yii\symfonymailer\Mailer::class,
             'viewPath' => '@app/mail',
@@ -42,14 +39,13 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'webhook' => 'webhook/index'
             ],
         ],
-        */
     ],
     'params' => $params,
 ];
